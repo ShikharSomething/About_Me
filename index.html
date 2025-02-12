@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5h1kh4r's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+    <div id="particles-js"></div>
+    
+    <nav class="fixed w-full bg-[#1a1a1a]/90 backdrop-blur-sm z-50">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <h1 class="text-2xl font-bold text-[#ff4545] glitch" title="5h1kh4r"><a href="#about">5h1kh4r</a></h1>
+            <div class="space-x-8">
+                <a href="#about" class="hover:text-[#ff4545] transition-colors">About</a>
+                <a href="#skills" class="hover:text-[#ff4545] transition-colors">Skills</a>
+                <a href="#gaming" class="hover:text-[#ff4545] transition-colors">Gaming</a>
+                <a href="#writeups" class="hover:text-[#ff4545] transition-colors">Writeups</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20">
+        <div data-aos="fade-up" class="text-center">
+            <div class="terminal mb-8">
+                <p class="terminal-text">root@5h1kh4r:~$ ./identify</p>
+                <p class="terminal-text">Reverse Engineering & Cryptography Learner</p>
+            </div>
+            <h1 class="text-6xl font-bold mt-8 mb-4 text-[#ff4545]">Breaking Code</h1>
+            <p class="text-xl text-gray-400">One challenge at a time</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-10">
+        <div data-aos="fade-up" class="max-w-4xl mx-auto card p-8 rounded-lg">
+            <h2 class="text-4xl mb-6 text-[#ff4545]">About Me</h2>
+            <p class="text-gray-300 leading-relaxed">
+                I am a keen learner in the fields of Reverse Engineering and Cryptography, constantly exploring the intricate world of 
+                binary analysis and cryptographic systems. When I'm not deep diving into assembly code or solving 
+                crypto challenges, you'll find me building epic structures in Minecraft or progressing through 
+                exciting adventures in Blockfront and DeceasedCraft. I'm also a passionate SpeedCuber Averaging around 15 seconds in 3x3.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div data-aos="flip-left" class="card p-8 rounded-lg">
+                <i class="fas fa-microchip text-5xl mb-4 text-[#ff4545]"></i>
+                <h3 class="text-2xl mb-4">Reverse Engineering</h3>
+                <p class="text-gray-300">Specializing in binary analysis, malware analysis, and software vulnerability research. 
+                Experienced with Binary Ninja, Ghidra, and various debugging tools.</p>
+            </div>
+            <div data-aos="flip-right" class="card p-8 rounded-lg">
+                <i class="fas fa-key text-5xl mb-4 text-[#ff4545]"></i>
+                <h3 class="text-2xl mb-4">Cryptography</h3>
+                <p class="text-gray-300">Focus on cryptographic implementation analysis, breaking weak encryption systems, 
+                and understanding modern cryptographic protocols.</p>
+            </div>
+            <div data-aos="flip-left" class="card p-8 rounded-lg">
+                <i class="fas fa-cube text-5xl mb-4 text-[#ff4545]"></i>
+                <h3 class="text-2xl mb-4">Cubing</h3>
+                <p class="text-gray-300">Speedcubing by passion<br>3x3 PB: 8.904s</p>
+            </div>
+            <div data-aos="flip-right" class="card p-8 rounded-lg">
+                <i class="fas fa-compact-disc text-5xl mb-4 text-[#ff4545]"></i>
+                <h3 class="text-2xl mb-4">Yo-yo</h3>
+                <p class="text-gray-300">Recently started in the field of yo-yoing. Learnt basic skills and yo-yo tricks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gaming" class="py-20 px-10 bg-[#151515]">
+        <div data-aos="fade-up" class="max-w-4xl mx-auto card p-8 rounded-lg">
+            <h2 class="text-4xl mb-6 text-[#ff4545]">Gaming Journey</h2>
+            <div id="gaming" class="flex justify-center items-center gap-8 flex-wrap">
+                <div class="text-center">
+                    <img src="blockfront.gif" alt="Blockfront" class="mx-auto mb-4 rounded"/>
+                    <h3 class="text-xl mb-2">Blockfront</h3>
+                    <p class="text-gray-300">Currently progressing through exciting challenges</p>
+                </div>
+                <div class="text-center">
+                    <img src="deceasedcraft.gif" alt="DeceasedCraft" class="mx-auto mb-4 rounded"/>
+                    <h3 class="text-xl mb-2">DeceasedCraft</h3>
+                    <p class="text-gray-300">Exploring new adventures and building communities</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="writeups" class="py-20 px-10">
+        <div data-aos="fade-up" class="max-w-4xl mx-auto card p-8 rounded-lg">
+            <h2 class="text-4xl mb-6 text-[#ff4545]">CTF Writeups</h2>
+            <p class="text-gray-300 mb-6">Check out my detailed CTF writeups and challenge solutions on Medium:</p>
+            <a href="https://medium.com/@shikhargupta435" target="_blank" 
+               class="inline-block bg-[#ff4545] text-white px-6 py-3 rounded-lg hover:bg-[#ff6b6b] transition-colors">
+                Read My Writeups
+            </a>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#ff4545' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>

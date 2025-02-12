@@ -1,0 +1,103 @@
+:root {
+    --primary: #ff4545;
+    --secondary: #1a1a1a;
+    --text: #ffffff;
+}
+
+body {
+    background: var(--secondary);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.glitch-container {
+    position: relative;
+}
+
+.glitch {
+    position: relative;
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%, 64% { transform: translate(2px,0) skew(0deg); }
+    4%, 60% { transform: translate(-2px,0) skew(0deg); }
+    62% { transform: translate(0,0) skew(5deg); }
+}
+
+.glitch:before,
+.glitch:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+.glitch:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+    2%, 64% { transform: translate(2px,-2px); }
+    4%, 60% { transform: translate(-2px,2px); }
+    62% { transform: translate(13px,-1px) skew(-13deg); }
+}
+
+.glitch:after {
+    animation: glitchBottom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom {
+    2%, 64% { transform: translate(-2px,0); }
+    4%, 60% { transform: translate(-2px,0); }
+    62% { transform: translate(-22px,5px) skew(21deg); }
+}
+
+.card {
+    background: rgba(255, 69, 69, 0.1);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 69, 69, 0.3);
+}
+
+.terminal {
+    background: #000;
+    border: 1px solid var(--primary);
+    padding: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-text {
+    color: var(--primary);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
